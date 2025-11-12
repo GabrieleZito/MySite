@@ -1,0 +1,31 @@
+.container {
+    height: calc(100vh - 80px);
+    width: 70vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: white;
+    min-width: 400px;
+    border-radius: 10px;
+}
+
+.card-header {
+    padding: 10px;
+    text-align: center;
+    font-family: "Roboto Mono", monospace;
+    font-size: large;
+    font-weight: 500;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 4px;
+}
+
+.card-content {
+    padding: 10px;
+}
