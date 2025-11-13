@@ -26,4 +26,4 @@ Contains a brief overview of my portfolio and a little about me and what i like.
 
 ## License
 
-MIT — see LICENSE file or add one if missing
+MIT — see LICENSE file
