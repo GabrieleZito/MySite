@@ -35,3 +35,25 @@ header {
     flex-basis: 100px;
     font-family: "Roboto Mono", monospace;
 }
+
+#burger {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    #name {
+        text-align: center;
+    }
+    #work-links,
+    #contacts {
+        display: none;
+    }
+    #burger {
+        display: block;
+        position: absolute;
+        right: 20px;
+    }
+    #burger:hover {
+        cursor: pointer;
+    }
+}
