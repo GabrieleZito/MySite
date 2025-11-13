@@ -47,8 +47,6 @@
     overflow-wrap: break-word;
 }
 
-.card-text {
-}
 
 #section2 {
     display: flex;
@@ -74,3 +72,4 @@
     font-size: 30px;
     margin-bottom: 10px;
 }
+

@@ -40,6 +40,27 @@ header {
     display: none;
 }
 
+.popup {
+    position: fixed;
+    top: -80px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.popup:target {
+    position: fixed;
+    top: 80px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    gap: 10px;
+    width: 100vw;
+    padding: 20px;
+    z-index: 10;
+}
+
 @media (max-width: 768px) {
     #name {
         text-align: center;
