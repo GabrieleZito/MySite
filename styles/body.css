@@ -1,31 +1,42 @@
 .container {
     height: calc(100vh - 80px);
     width: 100vw;
-    margin: auto;
+    margin: auto auto;
     display: flex;
     justify-content: center;
     align-items: center;
     /* background-color: aquamarine; */
     flex-wrap: wrap;
     gap: 40px;
-}
-
-.card-img {
-    height: 200px;
+    font-family: "Roboto Mono", monospace;
+    margin-top: 10px;
 }
 
 .card {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     background-color: white;
-    min-width: 200px;
+    width: 270px;
     min-height: 200px;
     border-radius: 10px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-img {
+    height: 250px;
+    width: 250px;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card-description{
+  font-size: 12px;
 }
 
 .card-header {
     padding: 10px;
     text-align: center;
-    font-family: "Roboto Mono", monospace;
     font-size: large;
     font-weight: 500;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 4px;
@@ -33,6 +44,10 @@
 
 .card-content {
     padding: 10px;
+    overflow-wrap: break-word;
+}
+
+.card-text {
 }
 
 #section2 {
@@ -41,6 +56,7 @@
     gap: 40px;
     /* background-color: aqua; */
     justify-content: space-between;
+    align-items: flex-start;
 }
 
 #section3,
@@ -49,13 +65,12 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 40px;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 
 .title {
     text-align: center;
     font-size: 30px;
-    font-family: "Roboto Mono", monospace;
     margin-bottom: 10px;
 }
